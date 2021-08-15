@@ -1,0 +1,139 @@
+:root {
+    --background:#525252;
+    --background-of-l-menu:#313131;
+    --background-of-l-menu2:#2e2e2e;
+    --btns-selected:#EC625F;
+    --inputs:#ebebeb;
+    --header-and-box-of-middle:#414141;
+    --seprator-and-text:#fff;
+    --header-of-table: #3A3A3A ;
+    --tbale-of-even: #4b4b4b ;
+    --table-hovered:rgba(0,0,0,.075);
+    --menu-hovered:#353535 ;
+
+    --cloch-h2:#F55858;
+}
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 100%;
+    background-color: var(--background);
+    margin: 0;
+    padding: 0;
+    color: #f3f3f3;
+    direction: rtl;
+    font-family: Vazir;
+    text-align: center;
+    user-select: none;
+}
+.wrapper{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    flex-flow: row  wrap;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    overflow: hidden;
+}
+.menu-container{
+    width: 22%;
+    height: 100%;
+    position: relative;
+    background: var(--background-of-l-menu);
+}
+.menu-container .img-header{
+    height: 25%;
+    width: 100%;
+    position: relative;
+}
+.d1{position: absolute; bottom: 5px;}
+.img-header img{ width: 100px; }
+.menu-items-container{
+    height: 60%;
+    width: 100%;    
+}
+.menu-items-container .menu-items{
+    width: 100%;
+    height: 50px;
+    font-family:"Vazir FD";
+    cursor: pointer;
+}
+.menu-items-container .hovered:hover{background-color: var(--menu-hovered)   ;}
+.menu-items img{
+    width: 35px;
+    margin: 0 19px;
+}
+.selected{ background: var(--btns-selected);}
+.selected::before{
+    content: "";
+    width: 0;
+    height: 0;
+    border: 12px solid transparent;
+    border-left-color:var(--background);
+    position: absolute;
+    left: 0;
+}
+.credit{
+    height: 15%;
+    width: 100%;
+    position: relative;
+}
+.d2{position: absolute; top: 0px;}
+.credit img{
+    width: 35px;
+    margin-bottom: 10px;
+}
+.menu-seprator{
+    width: 80%; 
+    height: 3px; 
+    border-radius: 30px;
+    background: var(--seprator-and-text);
+    opacity: 0.5;
+}
+
+.main-content{
+    width: 78%;
+    height: 100%;
+    position: relative;
+}
+.main-content .header{
+    width: 100%;
+    height: 54px;
+    background:var(--header-and-box-of-middle);
+}
+.header img{
+    width: 33px;
+    margin-left: 19px;
+    cursor: pointer;
+}
+.header h2{
+    width: auto;
+    margin-right: 50px;
+    cursor: pointer;
+    font-size: 21px;
+}
+/*  Middles pages Items */ 
+.middlepage-header{
+    width: 100%;
+    height: 60px;
+    background: var(--header-and-box-of-middle);
+    margin-top: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+.middlepage-main-contents{
+    width: 100%;
+    height: 490px;
+    background: var(--header-and-box-of-middle);
+    border-radius: 10px;
+    position: relative;
+    margin-bottom: 10px;
+}

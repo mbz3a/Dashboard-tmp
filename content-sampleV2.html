@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style-v2.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/General.css">
+    <title>EasySell - Dashboard</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="menu-container flex-column">
+            <div class="img-header flex-column">
+                <img src="img/img-logo.png" alt="img-logo">
+                <div class="menu-seprator d1"></div>
+            </div>
+            <div class="menu-items-container  flex-column">
+                <a class="menu-items flex-row flex-start hovered" href="./dashboard.html">
+                    <img src="./img/icon-dashboard.png" alt="icon">
+                    <p>
+                        داشبورد
+                    </p>
+                
+                </a>
+                <div class="menu-items flex-row flex-start hovered">
+                    <img src="./img/icon-product.png" alt="icon">
+                    <p>
+                        کالا
+                    </p>
+                </div>
+
+            </div>
+            <div class="credit flex-column">
+                <a href="http://maghz-afzar.ir/" target="_blank">
+                    <img class="opacity" src="img/logo-bw.png" alt="">
+                    <p class="opacity">
+                        شرکت مغزافزار پدیده ی خزر
+                    </p>
+                </a>
+                <div class="menu-seprator d2"></div>
+            </div>
+        </div>
+        <div class="main-content">
+            <div class="header flex-row flex-space">
+                
+                <h2>
+                    داشبورد
+
+                </h2>
+                <div class="flex-row">
+                    <div class="change-container flex-row ">
+                        <input class="checks" type="checkbox" name="changer" id="changer_a" >
+                        <label for="changer_a" id="switcher"></label>
+                    </div>
+                    <img class="opacity" src="img/icon-logout.png" alt="icon-logout">
+                </div>
+            </div>
+            <div class="middle-page-container">
+                <div class="middlepage-header flex-row flex-space   ">
+                    <div class="headers-title1" >
+                        لیست کالا
+                    </div>
+                    <div class="left-side-mh flex-row">
+                        <div class="searchinput flex-row">
+                            <img src="./img/icon-search.png" alt="">
+                            <input type="text" class="input-text no-margin in5" placeholder="جستوجو">
+                        </div>
+                        <button class="filterbtns">
+                            filter
+                        </button>
+                        <button class="btns no-margin btns-larg-min" >
+                            افزودن کالا جدید
+                        </button>
+                    </div>
+                </div>
+                <div class="middlepage-main-contents">
+                    <div class="body-table">
+                        <table class="tables-of-products">
+                            <thead>
+                                <tr>
+                                    <th>#</th>
+                                    <th>نام کالا</th>
+                                    <th>بارکد</th>
+                                    <th>موجودی</th>
+                                    <th>قیمت خرید</th>
+                                    <th>قیمت فروش</th>
+                                    <th>--</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>یخچال قانیار خزر مدل 2245 خاکستری</td>
+                                    <td>1234567891234</td>
+                                    <td>10</td>
+                                    <td>102000</td>
+                                    <td>110000</td>
+                                    <td>
+                                        <img class="opacity" src="./img/icon-edit.png" alt="">
+                                        <img class="opacity" src="./img/icon-trash.png" alt="">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>یخچال قانیار خزر مدل 2245 خاکستری</td>
+                                    <td>1234567891234</td>
+                                    <td>10</td>
+                                    <td>102000</td>
+                                    <td>110000</td>
+                                    <td>
+                                        <img class="opacity" src="./img/icon-edit.png" alt="">
+                                        <img class="opacity" src="./img/icon-trash.png" alt="">
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script src="./Javascript/front-scripts.js"></script>
+</body>
+</html> 

@@ -1,0 +1,65 @@
+:root {
+    --background:#525252;
+    --background-of-l-menu:#313131;
+}
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    border: 0;
+    box-sizing: border-box;
+    /* color:#ebcd44; */
+}
+body{
+    width: 100%;
+    height: 100%;
+    background-color: var(--background);
+    margin: 0;
+    padding: 0;
+    color: #f3f3f3;
+    direction: rtl;
+    font-family: Vazir;
+    text-align: center;
+    user-select: none;
+}
+.wrapper{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-flow: row  wrap;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    position: relative;
+}
+
+/* switcher */ 
+.change-container{
+    width: 60px;
+    height: 32px;
+    position: relative;
+    background: var(--background);
+    border-radius: 50px;
+    margin-left: 20px;
+    box-shadow: inset 0 0 4px rgba(25, 25, 25, 0.75);
+}
+.change-container label{
+    width: 23px;
+    height: 23px;
+    background: var(--background-of-l-menu);
+    border-radius: 50%;
+    position: absolute;
+    box-shadow: 0 0 rgba(0,0,0,0.6);
+    transition: 1s;
+}
+.p-left{    left: 6px; }
+.p-right{    right: 6px; }
+.change-container .checks{
+    position: absolute;
+    opacity: 0;
+}
+/* .change-container .checks:checked ~ label{
+    animation: switch 10s ; 
+    right:6px;
+    transition: 1s;
+} */

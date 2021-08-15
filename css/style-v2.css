@@ -1,0 +1,220 @@
+.wrapper .login{
+    width: 400px;
+    height: 525px;
+    background-color: var(--background-of-l-menu);
+    box-shadow: 0 4px 32px rgba(0,0,0,0.22);
+    border-radius: 7px;
+    margin-bottom: 30px;
+}
+.login img {
+    margin-bottom: 30px;
+    width: 140px;
+}
+.middle-page-container{
+    width: 100%;
+    height: 92.1vh;
+    background-color: var(--background);
+    overflow-y:scroll;
+    scrollbar-width: thin ;
+    padding: 20px 40px;
+}
+.default-page{
+    width: 100%;
+    height: 100%;
+}
+.default-page .small-card{
+    width: 332px;
+    height: 282px;
+    margin: auto;
+}
+.default-page .larg-cards {
+    width: 600px;
+    height: 282px;
+    margin: auto;
+}
+.default-page .small-card .card,
+.default-page .larg-cards .card{
+    width: 100%;
+    height: 88%;
+    background:var(--header-and-box-of-middle) ;
+    border-radius: 10px;
+    font-family: "Vazir FD";
+}
+.default-page .small-card .card-titles,
+.default-page .larg-cards .card-titles{ 
+    height: 12%; 
+    font-weight: bold;
+    font-size: 18px;
+}
+.default-page .small-card .card h2,
+.default-page .small-card .card h1{
+    color: #F55858;
+    margin: 10px;
+}
+.default-page .small-card .card h1:nth-child(3) span{margin:0  5px;}
+.default-page .small-card .card h1:nth-child(1){direction: ltr;}
+.table-of-cheque tbody td:nth-child(1),
+.table-of-cheque tbody td:nth-child(3){ font-family: "vazir FD"; }
+.warning{
+    width: 100%;
+    height: 60px;
+    font-size: 14px;
+}
+.change-container{
+    width: 60px;
+    height: 32px;
+    position: relative;
+    background: var(--background);
+    border-radius: 50px;
+    margin-left: 20px;
+    box-shadow: inset 0 0 4px rgba(25, 25, 25, 0.75);
+}
+.change-container label{
+    width: 23px;
+    height: 23px;
+    background: var(--background-of-l-menu);
+    border-radius: 50%;
+    position: absolute;
+    left: 6px; 
+    box-shadow: 0 0 rgba(0,0,0,0.6);
+    transition: cubic-bezier;
+    cursor: pointer;
+}
+.change-container .checks{
+    position: absolute;
+    opacity: 0;
+}
+.change-container .checks:checked ~ label{
+    right:6px;
+}
+
+.modal .m-xl{
+    width: 750px;
+    height: 480px;
+    background: var(--background-of-l-menu);
+    border-radius: 14px;
+    box-shadow: 0 3px 26px rgba(0,0,0,0.57);
+}
+.modal .modal-box-l{
+    width: 500px;
+    height: 400px;
+    background: var(--background-of-l-menu);
+    border-radius: 14px;
+    box-shadow: 0 3px 26px rgba(0,0,0,0.57);
+}
+.m-right-side{
+    width: 25%;
+    height: 100%;
+    background: var(--background-of-l-menu2);
+    border-radius: 0 14px 14px 0;
+}
+.m-left-side{
+    width: 75%;
+    height: 100%;
+    padding: 20px 50px 0 20px;
+    text-align: right;
+    position: relative;
+}
+.m-right-side .fillter-items{
+    width: 100%;
+    height: 48px;
+    cursor: pointer;
+}
+.fillter-items:hover,
+.filters-selected{
+    background: var(--background-of-l-menu);
+}
+.m-left-side .save-changes{
+    width: 100%;
+    height: 45px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    text-align: center;
+    border-radius: 0 0 0 14px;
+}
+.save-changes button{
+    margin: 0 10px;
+    font-size:15px;
+}
+.filter-tabs{
+    display: none;
+}
+/*/**/
+.middlepage-header .headers-title1{
+    margin-right:40px;
+    font-size: 18.5px;
+    font-family: 'Vazir FD' ;
+}
+.middlepage-header .left-side-mh{
+    margin-left: 40px;
+}
+.middlepage-header .left-side-mh button{
+    font-size: 15px;
+    margin-right:10px;
+}
+.f-img-size{
+    width: 20px;
+    margin: 0 16px 0 -2px;
+}
+.searchinput{
+    position: relative;
+    width: 280px;
+}
+.searchinput img{
+    width: 20px;
+    position: absolute;
+    left: 10px;
+    opacity: 0.5;
+    z-index: 100;
+}
+.searchinput .in5{
+    height: 32px;
+    position: relative;
+    font-size: 16px;
+    padding-left: 35px;
+    color: rgba(0,0,0,.75);
+    z-index: 10;
+}
+
+.body-table{
+    height: 100%;
+    overflow-y: scroll;
+    scrollbar-width: thin;
+    border-radius:10px;
+}
+.tables-of-products tbody td,
+.tables-of-products thead th{
+    height: 45.5px !important;
+    overflow-x: hidden ;
+}
+.tables-of-products tbody td:nth-child(1),
+.tables-of-products thead th:nth-child(1){ width: 5%; font-family: "Vazir FD"; } 
+
+.tables-of-products tbody td:nth-child(2),
+.tables-of-products thead th:nth-child(2){ 
+    width: 25%;
+    height: 45.5px !important;
+    font-size: 14px;
+}
+
+.tables-of-products tbody td:nth-child(3),
+.tables-of-products thead th:nth-child(3){ width: 17.5%;  font-family: "Vazir FD";}
+
+.tables-of-products tbody td:nth-child(4),
+.tables-of-products thead th:nth-child(4){ width: 10%;  font-family: "Vazir FD";} 
+
+.tables-of-products tbody td:nth-child(5),
+.tables-of-products thead th:nth-child(5){ width: 15%;  font-family: "Vazir FD";} 
+
+.tables-of-products tbody td:nth-child(6),
+.tables-of-products thead th:nth-child(6){ width: 15%;  font-family: "Vazir FD";} 
+
+.tables-of-products tbody td:nth-child(7),
+.tables-of-products thead th:nth-child(7){ width: 10%; } 
+
+.tables-of-products tbody td:nth-child(7) img{
+    width: 20px;
+    margin: 0 10px;
+}
+.tables-of-products tbody td:nth-child(7) img:nth-child(2){ width: 18px;}
